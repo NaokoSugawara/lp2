@@ -91,7 +91,7 @@ main {
 /* online-purchase */
 .online-purchase{
   width: 100%;
-  height:auto;
+  /* height:auto; */
   padding-top: 48px;
   padding-bottom: 48px;
   display: flex;
@@ -102,6 +102,7 @@ main {
 .online-purchase-inner {
   display: flex;
   align-items: center;
+  padding: 0;
   justify-content: space-between;
   /* margin: 0 auto; */
   background-color: #F0F4FF;
@@ -138,7 +139,7 @@ main {
     width: 65%;
     height: 146px;
     flex-direction: row;
-    padding: 5% 57px 5%;
+    padding: 0 57px;
   }
   .name-price {
     width: 33%;
