@@ -355,7 +355,7 @@ main {
   overflow: hidden;
   font-size: 15px;
   line-height: 1.8;
-  /* padding-bottom: 53px; */
+  padding-bottom: 53px;
   transition: 1000ms ease max-height;
 }
 
