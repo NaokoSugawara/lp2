@@ -29,7 +29,7 @@ main {
 
 
 
-/* main-visual */
+/* Main Visual */
 .top {
   width: 100%;
   height: auto;
@@ -108,7 +108,7 @@ main {
 
 
 
-/* online-purchase */
+/* Online Purchase */
 .online-purchase{
   width: 100%;
   /* height:auto; */
@@ -218,7 +218,7 @@ main {
 
 
 
-/* keep-skin-btfl */
+/* Keep Sking Beautiful */
 
 .keep-skin-btfl {
   width: 100%;
@@ -332,18 +332,30 @@ main {
 }
 
 .accordion__title {
-  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  justify-content: space-between;
   padding-bottom: 24px;
 }
 
-.accordion__title::after {
-  content: url(../images/caret-down-fill.png);
-  float: right;
+.accordion__title__h2 {
+  display: flex;
+  /* align-items: center; */
+  padding-right: 2%;
+  font-size: 15px;
 }
 
-.accordion__title--active::after {
+.accordion__title__icon {
+  padding-top: 0.5%;
+}
+
+.accordion__title__icon::after {
+  content: url(../images/caret-down-fill.png);
+}
+
+.accordion__title__icon--active::after {
   content: url(../images/caret-up-fill.png);
-  float: right;
 }
 
 .accordion__item span {
@@ -355,15 +367,32 @@ main {
   overflow: hidden;
   font-size: 15px;
   line-height: 1.8;
-  padding-bottom: 53px;
   transition: 1000ms ease max-height;
+}
+
+.accordion__content__p {
+  padding-bottom: 35px;
 }
 
 .accordion__content span {
   font-size: 18px;
 }
 
+@media screen and (min-width: 768px) {
+}
 
+@media screen and (max-width: 767px) {
+  .accordion__title__h2 {
+    vertical-align: top;
+  }
+  .accordion__title__icon {
+    vertical-align: top;
+  }
+  .qa__inner2 {
+    width: 95%;
+  }
+
+}
 
 
 
