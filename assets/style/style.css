@@ -52,7 +52,7 @@ main {
 }
 
 @media screen and (min-width: 768px) {
-  .top-container {
+  .top__container {
     display: grid;
     background-image: url(../images/mainVisual.png);
     background-size: cover;
@@ -83,7 +83,7 @@ main {
 }
 
 @media screen and (max-width: 768px) {
-  .top-container {
+  .top__container {
     display: none;
   }
   .bg-img {
@@ -293,6 +293,114 @@ main {
 
 
 
+/* Carousel */
+.carousel {
+  /* width: 100%;
+  height: auto; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0;
+}
+
+.carousel__inner {
+  width: 70%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel__sliders {
+  width: 85%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  border: none;
+  padding: 10px;
+  /* cursor: pointer; */
+  z-index: 10;
+}
+
+.left-arrow {
+  left: 35px;
+}
+
+.right-arrow {
+  right: 35px;
+}
+
+.carousel-track-container {
+  width: 80%;
+  height: auto;
+  overflow: hidden;
+}
+
+.carousel-track {
+  height: auto;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel__card {
+  min-width: 29.5%;
+  height: auto;
+  /* height: 420px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4% 1.3% 7%;
+  margin: 1.5%;
+  background-color: #DBF7F9;
+  
+}
+
+.carousel__card img {
+  width: 100px;
+  height: auto;
+  /* display: block; */
+}
+
+.carousel__card-name {
+  margin-bottom: 5%;
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.indicator {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: gray;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.indicator.active {
+  background-color: black;
+}
+
+
+
+
+
 
 /* Q and A */
 .qa {
@@ -351,11 +459,11 @@ main {
 }
 
 .accordion__title__icon::after {
-  content: url(../images/caret-down-fill.png);
+  content: url(../images/caret_down_fill.png);
 }
 
 .accordion__title__icon--active::after {
-  content: url(../images/caret-up-fill.png);
+  content: url(../images/caret_up_fill.png);
 }
 
 .accordion__item span {
