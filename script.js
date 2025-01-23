@@ -22,11 +22,11 @@ accordionTitles.forEach((accordionTitle) => {
 
 // Carousel
 
-const track = document.querySelector('.carousel__track-inner');
+const track = document.querySelector('.carousel-track');
 const slides = Array.from(track.children);
-const nextButton = document.querySelector('.carousel__right-arrow');
-const prevButton = document.querySelector('.carousel__left-arrow');
-const indicators = document.querySelectorAll('.carousel__indicator');
+const nextButton = document.querySelector('.right-arrow');
+const prevButton = document.querySelector('.left-arrow');
+const indicators = document.querySelectorAll('.indicator');
 const slideWidth = slides[0].getBoundingClientRect().width;
 
 let currentIndex = 0;
