@@ -350,11 +350,12 @@ main {
 .carousel__track-inner {
   height: auto;
   display: flex;
+  flex-direction: row;
   transition: transform 0.5s ease-in-out;
 }
 
 .carousel__card {
-  min-width: 31%;
+  min-width: 30.33%;
   height: auto;
   /* height: 420px; */
   display: flex;
