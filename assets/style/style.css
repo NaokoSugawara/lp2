@@ -322,7 +322,7 @@ main {
   overflow: hidden;
 }
 
-.carousel__arrow {
+.carousel__arrow--pc, .carousel__arrow--sp {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -333,21 +333,13 @@ main {
   z-index: 10;
 }
 
-.carousel__left-arrow {
-  left: 35px;
-}
-
-.carousel__right-arrow {
-  right: 35px;
-}
-
 .carousel__track {
   width: 80%;
   height: auto;
   overflow: hidden;
 }
 
-.carousel__track-inner {
+.carousel__track--inner {
   height: auto;
   display: flex;
   flex-direction: row;
@@ -365,7 +357,6 @@ main {
   padding: 4% 1.3% 7%;
   margin: 1.5%;
   background-color: #DBF7F9;
-  
 }
 
 .carousel__card img {
@@ -391,7 +382,7 @@ main {
   margin-top: 10px;
 }
 
-.carousel__indicator {
+.carousel__indicator, .carousel__indicator--sp {
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -400,8 +391,71 @@ main {
   border: none;
 }
 
-.carousel__indicator.active {
+.carousel__indicator.active, .carousel__indicator--sp.active {
   background-color: #00AFBF;
+}
+
+@media screen and (min-width: 768px) {
+  .carousel__arrow--sp {
+    display: none;
+  }
+  .carousel__left-arrow--pc {
+    left: 35px;
+  }
+  .carousel__right-arrow--pc {
+    right: 35px;
+  }
+  .carousel__indicators--sp {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .carousel__inner {
+    width: 100%;
+  }
+  .carousel__sliders {
+    width: 100%;
+  }
+  .carousel__arrow--pc {
+    display: none;
+  }
+  .carousel__arrow--sp {
+    padding: 0;
+  }
+  .carousel__left-arrow--sp {
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    /* transform: translate(-50%,-50%); */
+  }
+  .carousel__right-arrow--sp {
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    /* transform: translate(-50%,-50%); */
+  }
+  .carousel__track {
+    width: 75%;
+  }
+  .carousel__track--inner {
+    width: 100%;
+    /* justify-content: center; */
+  }
+  .carousel__card {
+    min-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4% 1.3% 25%;
+    /* margin: 1.5%; */
+    background-color: #DBF7F9;
+  }
+  .carousel__indicators {
+    display: none;
+  }
 }
 
 

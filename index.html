@@ -23,6 +23,7 @@
 </head>
 <body>
   <main>
+
     <section class="top" id="top">
       <div class="top__container">
         <div></div>
@@ -77,9 +78,11 @@
           <h2 class="qa__h2 noto-serif-jp-semibold">お客様の声</h2>
         </div>
         <div class="carousel__sliders" style="border: 3px solid red;">
-          <button class="carousel__arrow carousel__left-arrow"><img src="/lp2/assets/images/arrow_left.png" alt=""></button>
+          <button class="carousel__arrow--pc carousel__left-arrow--pc"><img src="/lp2/assets/images/arrow_left.png" alt=""></button>
+          <button class="carousel__arrow--sp carousel__left-arrow--sp"><img src="/lp2/assets/images/arrow_left_sp.png" alt=""></button>
+          <!-- <button class="carousel__arrow carousel__left-arrow"><img alt=""></button> -->
           <div class="carousel__track" style="border: 3px solid blue;">
-            <ul class="carousel__track-inner" style="border: 3px solid green;">
+            <ul class="carousel__track--inner" style="border: 3px solid green;">
               <li class="carousel__card">
                 <img src="/lp2/assets/images/face_a.png" alt="ユーザA">
                 <h2 class="carousel__name noto-serif-jp-regular">Aさん</h2>
@@ -112,18 +115,24 @@
               </li>
             </ul>
           </div>
-          <button class="carousel__arrow carousel__right-arrow"><img src="/lp2/assets/images/arrow_right.png" alt=""></button>
+          <button class="carousel__arrow--pc carousel__right-arrow--pc"><img src="/lp2/assets/images/arrow_right.png" alt=""></button>
+          <button class="carousel__arrow--sp carousel__right-arrow--sp"><img src="/lp2/assets/images/arrow_right_sp.png" alt=""></button>
+          <!-- <button class="carousel__arrow carousel__right-arrow"><img alt=""></button> -->
         </div>
         <div class="carousel__indicators">
           <button class="carousel__indicator active" data-slide="0"></button>
           <button class="carousel__indicator" data-slide="1"></button>
         </div>
+        <div class="carousel__indicators--sp">
+          <button class="carousel__indicator--sp active" data-slide="0"></button>
+          <button class="carousel__indicator--sp" data-slide="1"></button>
+          <button class="carousel__indicator--sp" data-slide="2"></button>
+          <button class="carousel__indicator--sp" data-slide="3"></button>
+          <button class="carousel__indicator--sp" data-slide="4"></button>
+          <button class="carousel__indicator--sp" data-slide="5"></button>
+        </div>
       </div>
-
-      
     </section>
-
-
 
     <section class="qa">
       <div class="qa__inner1">
@@ -178,6 +187,7 @@
         </div>
       </div>
     </section>
+
     <section class="online">
       <div class="online__inner">
         <div class="online__product">
@@ -191,6 +201,7 @@
       </div>
     </section>
   </main>
+
   <div class="to-the-top"><a href="#top"><img src="/lp2/assets/images/back_to_top.png" alt="" /></a></div>
   <footer> 
     <div class="footer">
@@ -203,5 +214,6 @@
       <div class="copyright noto-serif-jp-regular">© 2023 Kira-meki Inc. All rights reserved.</div>
     </div>
   </footer>
+
 </body>
 </html>
