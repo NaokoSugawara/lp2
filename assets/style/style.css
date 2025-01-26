@@ -155,6 +155,11 @@ main {
 }
 
 @media screen and (min-width: 768px) {
+
+  /* .online-purchase {
+    margin-top: 157px;
+    padding-top: 0;
+  } */
   .online__inner{
     width: 65%;
     height: 146px;
@@ -183,9 +188,12 @@ main {
 }
 
 @media screen and (max-width: 768px) {
-  .online {
-    margin-top: 157px;
+  /* .online {
+    margin-top: 57px;
     padding-top: 0;
+  } */
+  .online__top {
+    margin-top: 110px;
   }
   .online__inner{
     width: 92%;
@@ -295,12 +303,10 @@ main {
 
 /* Carousel */
 .carousel {
-  /* width: 100%;
-  height: auto; */
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 90px 0;
+  padding: 90px 0 80px;
 }
 
 .carousel__inner {
@@ -310,6 +316,14 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.carousel__header {
+  height: 94px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 41px;
 }
 
 .carousel__sliders {
@@ -334,7 +348,7 @@ main {
 }
 
 .carousel__track {
-  width: 80%;
+  width: 83%;
   height: auto;
   overflow: hidden;
 }
@@ -372,7 +386,7 @@ main {
 }
 
 .carousel__review {
-  line-height: 1.6;
+  line-height: 1.8;
   font-size: 16px;
 }
 
@@ -396,14 +410,17 @@ main {
 }
 
 @media screen and (min-width: 768px) {
+  /* .carousel__track {
+    margin: 0 100px;
+  } */
   .carousel__arrow--sp {
     display: none;
   }
   .carousel__left-arrow--pc {
-    left: 35px;
+    left: 2.5%;
   }
   .carousel__right-arrow--pc {
-    right: 35px;
+    right: 2.5%;
   }
   .carousel__indicators--sp {
     display: none;
@@ -411,11 +428,16 @@ main {
 }
 
 @media screen and (max-width: 767px) {
+  .carousel {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   .carousel__inner {
     width: 100%;
   }
   .carousel__sliders {
     width: 100%;
+    margin-bottom: 2.5%;
   }
   .carousel__arrow--pc {
     display: none;
@@ -444,14 +466,20 @@ main {
   }
   .carousel__card {
     min-width: 100%;
-    height: auto;
+    /* height: auto; */
+    height: 450px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    padding: 4% 1.3% 25%;
-    /* margin: 1.5%; */
+    padding: 4% 1.3%;
     background-color: #DBF7F9;
+  }
+  .carousel__card img {
+    margin-top: 7%;
+  }
+  .carousel__review {
+    padding: 0 3%;
   }
   .carousel__indicators {
     display: none;
@@ -471,7 +499,7 @@ main {
   justify-content: center;
   align-items: center;
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   background: linear-gradient(to right, #F4FFE8, #C6F0FE);
 }
 
@@ -498,9 +526,9 @@ main {
 }
 
 .accordion__item {
-  padding: 24px 24px 0 24px;
+  padding: 22px 24px 0 24px;
   /* padding: 24px; */
-  margin-bottom: 3%;
+  margin-bottom: 2.8%;
   background-color: white;
   /* overflow: hidden; Prevents margin collapse */
 }
@@ -510,7 +538,7 @@ main {
   flex-direction: row;
   /* align-items: center; */
   justify-content: space-between;
-  padding-bottom: 24px;
+  padding-bottom: 22px;
 }
 
 .accordion__title__h2 {
@@ -552,11 +580,12 @@ main {
   font-size: 18px;
 }
 
-@media screen and (min-width: 768px) {
-}
+/* @media screen and (min-width: 768px) {
+} */
 
 @media screen and (max-width: 767px) {
   .accordion__title__h2 {
+    line-height: 1.8;
     vertical-align: top;
   }
   .accordion__title__icon {
@@ -565,7 +594,10 @@ main {
   .qa__inner2 {
     width: 95%;
   }
-
+  .accordion__item {
+    margin-bottom: 4.7%;
+  }
+  
 }
 
 
