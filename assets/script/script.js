@@ -1,4 +1,6 @@
+//
 // Accordion
+//
 
 const accordionTitles = document.querySelectorAll(".accordion__title");
 
@@ -85,22 +87,11 @@ const updateIndicators = (index) => {
 
 };
 
-// const updateIndicators = (index) => {
-//     indicators.forEach((indicator, i) => {
-//         indicator.classList.toggle('active', i === index);
-//     });
-// };
-
 
 // EventListeners -------------------------------------------------------------
 
 // addEventListener to move to the next card
 nextButton.addEventListener('click', () => {
-
-    // console.log ("currentIndex = " + currentIndex)
-    // console.log ("cards.length - 3 = " + (cards.length - 3))
-    // console.log ("isForPc = " + isForPc)
-
     if (!isForPc && (currentIndex < cards.length - 1) ) {  // SP
         console.log ("currentIndex = " + currentIndex)
         currentIndex++;
