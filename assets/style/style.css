@@ -113,7 +113,7 @@ main {
   width: 100%;
   /* height:auto; */
   padding-top: 48px;
-  padding-bottom: 48px;
+  padding-bottom: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -650,6 +650,9 @@ footer ul {
 }
 
 @media screen and (max-width: 768px) {
+  .to-the-top {
+    padding-right: 3.5%;
+  }
   footer{
     height: 165px;
   }
