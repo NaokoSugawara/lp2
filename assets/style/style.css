@@ -14,6 +14,7 @@ html {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 a:hover {
@@ -82,7 +83,7 @@ main {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .top__container {
     display: none;
   }
@@ -111,12 +112,15 @@ main {
 /* Online Purchase */
 .online{
   width: 100%;
-  /* height:auto; */
   padding-top: 48px;
-  padding-bottom: 10px;
+  padding-bottom: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.online2 {
+  padding-bottom: 10px;
 }
 
 .online__inner {
@@ -124,7 +128,6 @@ main {
   align-items: center;
   padding: 0;
   justify-content: space-between;
-  /* margin: 0 auto; */
   background-color: #F0F4FF;
 }
 
@@ -155,11 +158,6 @@ main {
 }
 
 @media screen and (min-width: 768px) {
-
-  /* .online-purchase {
-    margin-top: 157px;
-    padding-top: 0;
-  } */
   .online__inner{
     width: 65%;
     height: 146px;
@@ -187,7 +185,7 @@ main {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   /* .online {
     margin-top: 57px;
     padding-top: 0;
@@ -270,7 +268,7 @@ main {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .middle__img {
     height: 680px;
     background-image: url(/lp2/assets/images/keep_skin_btfl_sp.png);
@@ -580,9 +578,6 @@ main {
   font-size: 18px;
 }
 
-/* @media screen and (min-width: 768px) {
-} */
-
 @media screen and (max-width: 767px) {
   .accordion__title__h2 {
     line-height: 1.8;
@@ -649,7 +644,7 @@ footer ul {
   font-size: 12px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .to-the-top {
     padding-right: 3.5%;
   }
