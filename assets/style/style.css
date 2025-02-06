@@ -54,7 +54,7 @@ main {
 @media screen and (min-width: 768px) {
   .top__container {
     display: grid;
-    background-image: url(/lp2/assets/images/main_visual.png);
+    background-image: url(/assets/images/main_visual.png);
     background-size: cover;
     background-position: center;
     grid-template-columns: repeat(8, 1fr);
@@ -93,7 +93,7 @@ main {
   .bg-img {
     width: 100%;
     height: 450px;
-    background-image: url(/lp2/assets/images/main_visual_sp.jpg);
+    background-image: url(/assets/images/main_visual_sp.jpg);
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -248,7 +248,7 @@ main {
 @media screen and (min-width: 768px) {
   .middle__img {
     height: 550px;
-    background-image: url(/lp2/assets/images/creams.png);
+    background-image: url(/assets/images/creams.png);
   }
   .middle__desc {
     top: 47%;
@@ -272,7 +272,7 @@ main {
 @media screen and (max-width: 767px) {
   .middle__img {
     height: 680px;
-    background-image: url(/lp2/assets/images/keep_skin_btfl_sp.png);
+    background-image: url(/assets/images/keep_skin_btfl_sp.png);
   }
   .middle__desc {
     width: 95%;
@@ -539,11 +539,11 @@ main {
 }
 
 .accordion__title__icon::after {
-  content: url(/lp2/assets/images/caret_down_fill.png);
+  content: url(/assets/images/caret_down_fill.png);
 }
 
 .accordion__title__icon--active::after {
-  content: url(/lp2/assets/images/caret_up_fill.png);
+  content: url(/assets/images/caret_up_fill.png);
 }
 
 .accordion__item span {
