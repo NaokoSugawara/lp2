@@ -69,6 +69,10 @@ main {
     flex-direction: column;
     justify-content: center;
   }
+  .top__catch h1 {
+    padding-left: 15%;
+    padding-bottom: 2%;
+  }
   .top__catch p {
     padding-left: 15%;
     padding-bottom: 2%;
@@ -139,7 +143,10 @@ main {
   justify-content: space-between;
 }
 
-.online__buttons button {
+.online__buttons div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 58px;
   border-radius: 9999px;
   border: none;
@@ -171,7 +178,7 @@ main {
     width: 66%;
     height: auto;
   }
-  .online__buttons button {
+  .online__buttons div {
     width: 47%;
   }
   .online__name {
@@ -210,7 +217,7 @@ main {
     justify-content: space-between;
     align-items: center;
   }
-  .online__buttons button {
+  .online__buttons div {
     width: 83%;
   }
 }
@@ -336,6 +343,7 @@ main {
   border: none;
   padding: 10px;
   z-index: 10;
+  max-width: 5%;
 }
 
 .carousel__track {
@@ -493,12 +501,12 @@ main {
   margin-bottom: 41px;
 }
 
-.qa__h1 {
+.qa__h2 {
   font-size: 45px;
   letter-spacing: 0.12rem;
 }
 
-.qa__h2 {
+.qa__h3 {
   margin-top: 9px;
   font-size: 20px;
 }
@@ -520,7 +528,7 @@ main {
   padding-bottom: 22px;
 }
 
-.accordion__title__h2 {
+.accordion__title__h3 {
   display: flex;
   padding-right: 2%;
   font-size: 15px;
@@ -559,7 +567,7 @@ main {
 }
 
 @media screen and (max-width: 767px) {
-  .accordion__title__h2 {
+  .accordion__title__h3 {
     line-height: 1.8;
     vertical-align: top;
   }
