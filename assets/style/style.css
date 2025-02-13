@@ -309,7 +309,7 @@ main {
 }
 
 .carousel__inner {
-  width: 70%;
+  width: 80%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -421,6 +421,12 @@ main {
   }
 }
 
+@media screen and (max-width: 1700px) and (min-width: 768px) {
+  .carousel__inner {
+    width: 90%;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .carousel {
     padding-top: 60px;
@@ -512,7 +518,7 @@ main {
 }
 
 .qa__inner2 {
-  width: 45%;
+  width: 35%;
 }
 
 .accordion__item {
