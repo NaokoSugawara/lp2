@@ -38,7 +38,8 @@
     "javascript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": true, // 空のかっこの開きかっこと閉じかっこの中に空白のスペースを入れる
     "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true, // 空でないかっこの開きかっこと閉じかっこに空白のスペースを入れる
     "javascript.validate.enable": true, // VS Code標準のJavaScript文法チェック機能を有効化
-    "window.autoDetectColorScheme": false, // エディタの外観をPCのカラーテーマ（ライト/ダーク）に自動で切り替える設定を無効
+    "window.autoDetectColorScheme": false,
+    "liveServer.settings.port": 5502, // エディタの外観をPCのカラーテーマ（ライト/ダーク）に自動で切り替える設定を無効
     // "workbench.colorTheme": "GitHub Light", // エディタの外観をGitHub Lightにする
   },
   "extensions": {
